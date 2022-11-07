@@ -1,2 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trabalho 3</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="othello.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <!-- <script defer src="https:
+    <!-- Don't defer this, or we get a flash of an incomplete page. -->
+    <script src="othello.js"></script>
+    <script src="AIBoard.js"></script>
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', init);
+    </script>
+  </head>
+  <body>
+    <div id="appContainer">
+      <div id="gameContainer">
+	<div id="buttons" align="left">
+	  <button id="resetButton">Reiniciar</button>
+          <button id="gameModeButton">Contra outro jogador</button>
+	</div>
+	<br><br>
+        <div id="gameBoard"></div><br><br>
+        <div id="scoreBoard"></div>
+      </div>
+  </body>
 </html>
